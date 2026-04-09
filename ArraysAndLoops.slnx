@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Arrays/Arrays.csproj" />
+  <Project Path="DoWhile/DoWhile.csproj" />
+  <Project Path="For/For.csproj" />
+  <Project Path="Foreach/Foreach.csproj" />
+  <Project Path="While/While.csproj" />
+</Solution>
