@@ -35,3 +35,11 @@ while (k <= numbers.Length)
     k++;
 }
 Console.WriteLine("\n");
+
+
+//Нескінченний цикл, який виводить на екран поточний час кожні 2 секунди
+//while (true)
+//{
+//    Console.WriteLine($"Current time: {DateTime.Now}");
+//    Thread.Sleep(2000); //Затримка на 2 секунди
+//}
