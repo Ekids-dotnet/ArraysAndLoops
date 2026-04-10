@@ -14,6 +14,11 @@ while (i < numbers.Length)
 }
 Console.WriteLine("\n");
 
+//Умова невірна до початку циклу, але тіло виконається принаймні один раз
+while (5 > 6)
+{
+    Console.WriteLine("This message will not be printed.");
+}
 
 //Надрукуємо на екран елементи масив з кінця до початку
 Console.WriteLine("Print elements from End to Start (#1)");

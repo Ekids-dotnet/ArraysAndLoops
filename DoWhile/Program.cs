@@ -18,6 +18,11 @@ do
 } while (i < numbers.Length);
 Console.WriteLine("\n");
 
+//Умова невірна до початку циклу, але тіло виконається принаймні один раз
+do
+{
+    Console.WriteLine("This will be printed only once.");
+} while (5 > 6);
 
 //Надрукуємо на екран елементи масив з кінця до початку
 Console.WriteLine("Array from end to start:");
