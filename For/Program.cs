@@ -39,3 +39,13 @@ for (int i = 0; i < numbers.Length; i += 2)
     Console.Write($"{numbers[i]} ");
 }
 Console.WriteLine();
+
+//Змінну циклу можна ініціалізувати поза циклом, тоді в умові та кроку можна використовувати лише її ім'я.
+//Це може бути корисно, якщо вам потрібно використовувати цю змінну після завершення циклу.
+int x = 0;
+for (; x < numbers.Length; x += 2)
+{
+    Console.Write($"{numbers[x]} ");
+}
+Console.WriteLine($"Value of 'x' after the loop: {x}");
+x++;
