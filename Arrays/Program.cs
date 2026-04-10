@@ -59,7 +59,8 @@ Console.WriteLine("Array size: " + arrayLength);
 Console.WriteLine("Array max number: " + arrayMax);
 Console.WriteLine("Array min number: " + arrayMin);
 
-Array.Sort(numbers);
+numbers.Sort(); //Сортування масиву
+//Array.Sort(numbers);  // Альтернативний спосіб сортування масиву
 Console.WriteLine("Sorted array");
 Array.ForEach(numbers, n => Console.Write(n + ", "));
 Console.WriteLine();
@@ -88,3 +89,15 @@ string[,] cinemaHall = {
 
 Console.WriteLine(cinemaHall[2, 1]); //Хто сидить у 3 рядку на 2 місці? (Karen)
 Console.WriteLine(cinemaHall[cinemaHall.GetLength(0) - 1, cinemaHall.GetLength(1) - 1]); //Хто сидить у останньому рядку на останньому місці? (Emily)
+
+
+
+//=========Зубчасті або Ступінчасті масиви (Jagged Arrays)========
+// Це масиви масивів, де кожен "ряд" може мати різну кількість стовпців.
+// Оголошення без інінціалізації
+int[][] jaggedArray = new int[3][]; // створюємо масив з 3 рядками, але не визначаємо кількість стовпців
+
+jaggedArray[0] = new int[] { 1, 2, 3 };
+jaggedArray[1] = new int[] { 4, 5 };
+jaggedArray[2] = new int[] { 6, 7, 8, 9 };
+
