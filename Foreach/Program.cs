@@ -10,7 +10,7 @@ Console.WriteLine();
 
 //----------------------------------------------------------------------------------------------------------------
 
-var daysOfWeek = new string[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
+string[] daysOfWeek = new string[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
 
 //Виводимо всі дні тижня, які містять літеру 'o'
 foreach (string item in daysOfWeek)

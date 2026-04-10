@@ -42,10 +42,40 @@ Console.WriteLine();
 
 //Змінну циклу можна ініціалізувати поза циклом, тоді в умові та кроку можна використовувати лише її ім'я.
 //Це може бути корисно, якщо вам потрібно використовувати цю змінну після завершення циклу.
+Console.WriteLine("Loop variable initialized before loop.");
 int x = 0;
 for (; x < numbers.Length; x += 2)
 {
     Console.Write($"{numbers[x]} ");
 }
+Console.WriteLine();
 Console.WriteLine($"Value of 'x' after the loop: {x}");
 x++;
+
+Console.WriteLine();
+
+//Якщо звернутися до масиву за індексом, який виходить за межі його довжини,
+//буде викинуто виняток IndexOutOfRangeException.
+int[] shortNumberaArray = { 1, 2, 3 };
+//for (int i = 0; i <= shortNumberaArray.Length; i++)
+//{
+//    Console.Write($"{numbers[i]} ");
+//}
+
+//Вкладений for - це цикл всередині іншого циклу.
+//Внутрішній цикл виконується повністю для кожної ітерації зовнішнього циклу.
+string[,] cinemaHall = {
+    { "James", "Robert", "Mary", "Michael" },   // Row 0
+    { "Linda", "Susan", "John", "Sarah" },      // Row 1
+    { "David", "Karen", "Thomas", "Emily" }     // Row 2
+};
+
+for (int i = 0; i < cinemaHall.GetLength(0); i++)
+{
+    Console.WriteLine($"Row: {i}");
+    for (int j = 0; j < cinemaHall.GetLength(1); j++)
+    {
+        Console.Write($"Seat {j}: {cinemaHall[i, j]}, ");
+    }
+    Console.WriteLine();
+}
