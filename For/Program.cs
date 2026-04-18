@@ -59,7 +59,7 @@ Console.WriteLine();
 int[] shortNumberaArray = { 1, 2, 3 };
 //for (int i = 0; i <= shortNumberaArray.Length; i++)
 //{
-//    Console.Write($"{numbers[i]} ");
+//    Console.Write($"{shortNumberaArray[i]} ");
 //}
 
 //Вкладений for - це цикл всередині іншого циклу.

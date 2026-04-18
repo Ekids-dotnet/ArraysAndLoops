@@ -14,7 +14,7 @@ while (i < numbers.Length)
 }
 Console.WriteLine("\n");
 
-//Умова невірна до початку циклу, але тіло виконається принаймні один раз
+//Умова невірна до початку циклу, тіло циклу не виконується
 while (5 > 6)
 {
     Console.WriteLine("This message will not be printed.");
